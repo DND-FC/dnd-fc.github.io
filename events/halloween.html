@@ -19,7 +19,7 @@
           <h2 id="when-heading">When?</h2>
           <p>
             Sunday 25th October, 4PM - 9PM Server Time
-            <span class="local-time">(Your local time: <time id="local-start-time" datetime="2026-10-25T17:00:00Z">5PM UTC</time>)</span>
+            <span class="local-time">(That's <time id="local-start-time" datetime="2026-10-25T17:00:00Z">???</time> in your local time)</span>
           </p>
         </section>
 
@@ -141,11 +141,13 @@
     <script>
       const localStartTime = document.querySelector("#local-start-time");
       const eventStart = new Date(localStartTime.dateTime);
+      const localHours = eventStart.getHours();
+      const localMinutes = eventStart.getMinutes();
+      const hour = localHours % 12 || 12;
+      const minutes = localMinutes ? `.${String(localMinutes).padStart(2, "0")}` : "";
+      const period = localHours >= 12 ? "PM" : "AM";
 
-      localStartTime.textContent = new Intl.DateTimeFormat(undefined, {
-        hour: "numeric",
-        minute: "2-digit",
-      }).format(eventStart);
+      localStartTime.textContent = `${hour}${minutes}${period}`;
     </script>
 
   </body>
