@@ -1,0 +1,1 @@
+import{t as e}from"./bootstrap.bundle.min-Bev_N_v2.js";e();

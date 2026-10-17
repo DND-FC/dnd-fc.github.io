@@ -1,0 +1,1 @@
+import"./bootstrap.bundle.min-Bev_N_v2.js";import"./simple-page-D4GuZVW7.js";function e(e){let t=e.getHours(),n=e.getMinutes();return`${t%12||12}${n?`.${String(n).padStart(2,`0`)}`:``}${t>=12?`PM`:`AM`}`}document.querySelectorAll(`time[data-local-start]`).forEach(t=>{t.textContent=e(new Date(t.dateTime))});
