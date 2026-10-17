@@ -5,45 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Details, games, costume contests and schedule for the D&D Halloween event." />
     <title>D&amp;D Halloween Spooktacular</title>
-    <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;color:#eeeae4;background:#11100f;font-family:Arial,Helvetica,sans-serif}*{box-sizing:border-box}body{color:#eeeae4;background:#11100f;margin:0;line-height:1.6}main{width:min(900px,100% - 2rem);margin:0 auto;padding:3rem 0 4rem}header{border-bottom:3px solid #d97941;padding-bottom:2rem}h1,h2,h3{line-height:1.2}h1{margin:0 0 .75rem;font-size:clamp(2.2rem,8vw,4rem)}.title-highlight{color:#f1a66f}h2{margin:0 0 .75rem;font-size:1.55rem}h3{margin:1.5rem 0 .5rem;font-size:1.1rem}p{margin:.5rem 0 1rem}a{color:#f1a66f}.intro{color:#cfc7be;margin:0;font-size:1.15rem}.event-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0;display:grid}.event-details section,.content-section{background:#191715;border:1px solid #3b3733;border-radius:.45rem;padding:1.25rem}.event-details p{margin-bottom:0}.event-details .local-time{color:#aaa198;margin-top:.2rem;font-size:.85rem;display:block}.content-section{margin-top:1rem}.content-section>:last-child{margin-bottom:0}ul{margin:.75rem 0 1rem;padding-left:1.4rem}li+li{margin-top:.65rem}.leadership-photo{margin:1.25rem 0 0}.leadership-photo img{border:1px solid #3b3733;border-radius:.35rem;width:100%;height:auto;display:block}.leadership-photo figcaption{color:#aaa198;margin-top:.5rem;font-size:.85rem}.note{color:#d7cec5;border-left:3px solid #d97941;padding-left:1rem}.schedule{border-collapse:collapse;width:100%}.schedule th,.schedule td{text-align:left;vertical-align:top;border-bottom:1px solid #3b3733;padding:.65rem .25rem}.schedule th{color:#f1a66f;width:6rem}.schedule tr:last-child th,.schedule tr:last-child td{border-bottom:0}.prize{font-size:1.05rem;font-weight:700}.schedule-lines{margin-left:1rem;font-size:.9rem}.schedule-lines p{grid-template-columns:5.25rem 1fr;gap:.4rem;margin:.25rem 0;display:grid}.schedule-time{color:#f1a66f;font-weight:700}footer{color:#aaa198;margin-top:2rem;font-size:.9rem}@media (width<=560px){main{padding-top:2rem}.event-details{grid-template-columns:1fr}.schedule th{width:5rem}}</style>
+    <style>:root{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;color:#eeeae4;background:#11100f;font-family:Arial,Helvetica,sans-serif}*{box-sizing:border-box}body{color:#eeeae4;background:#11100f;line-height:1.6}main{max-width:900px}header{border-color:#d97941!important}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2.2rem,8vw,4rem)}.title-highlight{color:#f1a66f}h2{font-size:1.55rem}h3{margin:1.5rem 0 .5rem;font-size:1.1rem}p{margin:.5rem 0 1rem}a{color:#f1a66f}.intro{color:#cfc7be;font-size:1.15rem}.detail-card,.content-section{background:#191715;border:1px solid #3b3733;border-radius:.45rem}.event-details p{margin-bottom:0}.event-details .local-time{color:#aaa198;font-size:.85rem}.content-section>:last-child{margin-bottom:0}li+li{margin-top:.65rem}.leadership-photo img{border:1px solid #3b3733;border-radius:.35rem}.leadership-photo figcaption{color:#aaa198}.note{color:#d7cec5;border-left:3px solid #d97941}.prize{font-size:1.05rem;font-weight:700}.schedule-time{color:#f1a66f;width:5.25rem;font-weight:700}footer{color:#aaa198}</style>
     <script type="module" crossorigin src="../assets/bootstrap.bundle.min-Bev_N_v2.js"></script>
     <script type="module" crossorigin src="../assets/simple-page-D4GuZVW7.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/simple-page-Dcj71sHl.css">
   </head>
-  <body>
-    <main>
-      <header>
-        <h1>Join us for The D&amp;D <span class="title-highlight">Halloween Spooktacular</span>!</h1>
-        <p class="intro">We've got games, prizes and costume contests!</p>
+  <body class="min-vh-100">
+    <main class="container py-4 py-md-5">
+      <header class="border-bottom border-3 pb-4">
+        <h1 class="mb-3">Join us for The D&amp;D <span class="title-highlight">Halloween Spooktacular</span>!</h1>
+        <p class="intro mb-0">We've got games, prizes and costume contests!</p>
       </header>
 
-      <div class="event-details">
-        <section aria-labelledby="when-heading">
-          <h2 id="when-heading">When?</h2>
-          <p>
-            Sunday 25th October, 4PM - 9PM Server Time
-            <span class="local-time">(That's <time id="local-start-time" datetime="2026-10-25T17:00:00Z">???</time> in your local time)</span>
-          </p>
-        </section>
+      <div class="event-details row g-3 my-4">
+        <div class="col-12 col-sm-6">
+          <section class="detail-card h-100 p-4" aria-labelledby="when-heading">
+            <h2 class="mb-3" id="when-heading">When?</h2>
+            <p class="mb-0">
+              Sunday 25th October, 4PM - 9PM Server Time
+              <span class="local-time d-block mt-1">(That's <time id="local-start-time" datetime="2026-10-25T17:00:00Z">???</time> in your local time)</span>
+            </p>
+          </section>
+        </div>
 
-        <section aria-labelledby="where-heading">
-          <h2 id="where-heading">Where?</h2>
-          <p>We meet at the FC House</p>
-        </section>
+        <div class="col-12 col-sm-6">
+          <section class="detail-card h-100 p-4" aria-labelledby="where-heading">
+            <h2 class="mb-3" id="where-heading">Where?</h2>
+            <p class="mb-0">We meet at the FC House</p>
+          </section>
+        </div>
       </div>
 
-      <section class="content-section" aria-labelledby="what-heading">
-        <h2 id="what-heading">What?</h2>
+      <section class="content-section mt-3 p-4" aria-labelledby="what-heading">
+        <h2 class="mb-3" id="what-heading">What?</h2>
         <p>
           We've got a packed schedule of games and competitions for you guys throughout the evening, with lots of
           amazing prizes to give away!
         </p>
       </section>
 
-      <section class="content-section" aria-labelledby="costumes-heading">
-        <h2 id="costumes-heading">Costume Contests</h2>
+      <section class="content-section mt-3 p-4" aria-labelledby="costumes-heading">
+        <h2 class="mb-3" id="costumes-heading">Costume Contests</h2>
         <p>We've got 3 Halloween Costume Contests we'll be judging on the day:</p>
-        <ul>
+        <ul class="my-3 ps-4">
           <li><strong>TV &amp; Video Game Characters:</strong> Dress as your favourite TV or Video Game Character</li>
           <li>
             <strong>Leadership Mimicry:</strong> Dress up as one of the FC Leads, creativity over accuracy is highly
@@ -51,7 +55,7 @@
           </li>
           <li><strong>Wildcard:</strong> Dress up as anything you please. Go Wild!</li>
         </ul>
-        <p class="note">
+        <p class="note ps-3">
           To give everyone a fair chance, creativity beats accuracy here - don't expect to win just because you bought
             a ready-to-go character glam off the Square Enix Store!
         </p>
@@ -73,22 +77,23 @@
             And if you need some ideas, chest out <a target="_blank" href="https://ffxiv.eorzeacollection.com/glamours">Eorzea Collection</a> for inspiration, ideas on what pieces to use and more!
         </p>
 
-        <figure class="leadership-photo">
+        <figure class="leadership-photo mt-4 mb-0">
           <img
+            class="d-block w-100 img-fluid"
             src="../assets/group-B5yz6ll8.png"
             alt="Five members of the D&amp;D Free Company leadership team standing together"
           />
-          <figcaption>
+          <figcaption class="mt-2 small">
             The FC Leads, for reference if you don't know what we look like.<br />
             Left to Right: Fractal Pigeon, Babs Whimslow, Gospi L'ammazzademoni, Kamila Bloodwolf, Axel Knox
           </figcaption>
         </figure>
       </section>
 
-      <section class="content-section" aria-labelledby="games-heading">
-        <h2 id="games-heading">Games!</h2>
+      <section class="content-section mt-3 p-4" aria-labelledby="games-heading">
+        <h2 class="mb-3" id="games-heading">Games!</h2>
         <p>We'll also be running a handful of games during the evening:</p>
-        <ul>
+        <ul class="my-3 ps-4">
           <li>
             <strong>Human Darts:</strong> Take aim and jump! Please make sure you have Coerthas Central Highlands
             unlocked if you're still in ARR because we're going jumping off the Observatorium and aiming to land as
@@ -103,28 +108,28 @@
         </ul>
       </section>
 
-      <section class="content-section" aria-labelledby="schedule-heading">
-        <h2 id="schedule-heading">Schedule</h2>
+      <section class="content-section mt-3 p-4" aria-labelledby="schedule-heading">
+        <h2 class="mb-3" id="schedule-heading">Schedule</h2>
         <p>
           It's a long evening and people need breaks! So that you can plan around the bits you really want to be part of
           we've got a rough schedule for you:
         </p>
         <p>(All times are Server Time/UTC)</p>
-        <div class="schedule-lines">
-          <p><span class="schedule-time">4PM</span><span>- Gather at the FC House</span></p>
-          <p><span class="schedule-time">4.15PM</span><span>- Human Darts</span></p>
-          <p><span class="schedule-time">4.45PM</span><span>- Costume Contest: TV &amp; Video Game Characters</span></p>
-          <p><span class="schedule-time">5.15PM</span><span>- Scavenger Hunt</span></p>
-          <p><span class="schedule-time">5.45PM</span><span>- Costume Contest: Leadership Mimicry</span></p>
-          <p><span class="schedule-time">6.15PM</span><span>- Break for people to eat, chill, chat, etc</span></p>
-          <p><span class="schedule-time">7.15PM</span><span>- Hide and Seek</span></p>
-          <p><span class="schedule-time">8.30PM</span><span>- Costume Contest Finale: Wildcard</span></p>
-          <p><span class="schedule-time">9PM</span><span>- End</span></p>
+        <div class="schedule-lines ms-3 small">
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">4PM</span><span>- Gather at the FC House</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">4.15PM</span><span>- Human Darts</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">4.45PM</span><span>- Costume Contest: TV &amp; Video Game Characters</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">5.15PM</span><span>- Scavenger Hunt</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">5.45PM</span><span>- Costume Contest: Leadership Mimicry</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">6.15PM</span><span>- Break for people to eat, chill, chat, etc</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">7.15PM</span><span>- Hide and Seek</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">8.30PM</span><span>- Costume Contest Finale: Wildcard</span></p>
+          <p class="d-flex gap-2 my-1"><span class="schedule-time flex-shrink-0">9PM</span><span>- End</span></p>
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="prizes-heading">
-        <h2 id="prizes-heading">Prizes?</h2>
+      <section class="content-section mt-3 p-4" aria-labelledby="prizes-heading">
+        <h2 class="mb-3" id="prizes-heading">Prizes?</h2>
         <p class="prize">That's right! Mounts, minions and more!</p>
         <p>
           And the best of all, the winner of the Costume Contest Finale will receive a
@@ -133,8 +138,8 @@
         </p>
       </section>
 
-      <footer>
-        <p>
+      <footer class="mt-4 small">
+        <p class="mb-0">
           Don't worry, if you can't join us for everything that's okay! And if you don't want to enter a specific
           contest just sit back and enjoy the show.
         </p>
